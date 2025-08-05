@@ -81,3 +81,47 @@ Requirement Analysis is the cornerstone of successful software development. Here
 - **Outcome**: Projects with thorough requirement analysis are 3x more likely to deliver on time
 
 > **Real-world Case**: The 1999 Mars Climate Orbiter failure ($327M loss) was ultimately traced to unspecified unit conversion requirements between teams.
+
+## Key Activities in Requirement Analysis
+
+Requirement Analysis consists of five systematic activities that transform vague needs into actionable specifications:
+
+### 1. Requirement Gathering
+- **Objective**: Collect raw input from all stakeholders
+- **Techniques**:
+  - Stakeholder interviews (1-on-1 sessions with key users)
+  - Surveys (large-scale needs assessment)
+  - Document analysis (reviewing existing systems/processes)
+- **Output**: Initial requirement wishlist
+
+### 2. Requirement Elicitation
+- **Objective**: Refine and clarify gathered requirements
+- **Techniques**:
+  - Brainstorming sessions (group ideation)
+  - Prototyping (quick mockups to validate concepts)
+  - Observation (studying users in their workflow)
+- **Output**: Prioritized, conflict-free requirements
+
+### 3. Requirement Documentation
+- **Objective**: Create formal, shareable artifacts
+- **Deliverables**:
+  - Software Requirements Specification (SRS) document
+  - User stories with acceptance criteria
+  - Use case diagrams (visual workflows)
+- **Standard**: Follows IEEE 830 format for SRS
+
+### 4. Requirement Analysis and Modeling
+- **Objective**: Structure requirements for implementation
+- **Methods**:
+  - Data flow diagrams (system interactions)
+  - Entity-Relationship diagrams (database structure)
+  - State transition diagrams (system behavior)
+- **Tools**: UML, BPMN, or SysML notations
+
+### 5. Requirement Validation
+- **Objective**: Ensure requirements are correct/complete
+- **Techniques**:
+  - Walkthroughs (step-by-step review with stakeholders)
+  - Traceability matrix (mapping requirements to sources)
+  - Feasibility analysis (technical/budget assessment)
+- **Success Metric**: Signed-off requirement baseline
