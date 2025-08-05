@@ -171,3 +171,43 @@ Requirement Analysis consists of five systematic activities that transform vague
 5. **Scalability**  
    - "The system shall support 20% annual growth in property listings"  
    - "Database queries shall maintain sub-second response times with 50,000 properties"
+  
+     ## Use Case Diagrams
+
+### What are Use Case Diagrams?
+Visual representations that:
+- Show interactions between **actors** (users/systems) and the system
+- Outline **use cases** (system functionalities)
+- Demonstrate system scope and requirements at a high level
+
+**Key Benefits**:
+- Clarifies system boundaries
+- Identifies all user roles
+- Reveals functional requirements
+- Serves as communication tool between stakeholders
+
+### Booking System Use Case Diagram
+![ALX Booking System Use Cases](alx-booking-uc.png)
+
+**Diagram Components**:
+1. **Actors**:
+   - Guest (unauthenticated user)
+   - Registered User
+   - Property Host
+   - Payment Gateway (external system)
+
+2. **Core Use Cases**:
+   - Search Properties
+   - Book Property
+   - Manage Listing (Host)
+   - Process Payment
+   - Write Review
+
+3. **Relationships**:
+   - Includes/extends relationships show dependency between actions
+   - Generalization shows inherited behaviors
+
+To create/modify this diagram:
+1. Open [Draw.io](https://app.diagrams.net/)
+2. Use UML use case shapes
+3. Export as PNG (800x600 recommended)
