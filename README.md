@@ -211,3 +211,46 @@ To create/modify this diagram:
 1. Open [Draw.io](https://app.diagrams.net/)
 2. Use UML use case shapes
 3. Export as PNG (800x600 recommended)
+
+   ## Acceptance Criteria
+
+### What are Acceptance Criteria?
+Clear, testable conditions that determine when a requirement or user story is considered complete. They serve as the "definition of done" for development teams and quality assurance.
+
+### Importance in Requirement Analysis:
+1. **Alignment** - Bridges communication gaps between stakeholders and developers
+2. **Quality Control** - Provides measurable standards for testing
+3. **Scope Management** - Prevents feature creep by defining exact deliverables
+4. **Automation** - Enables creation of precise test cases
+
+### Characteristics of Good Acceptance Criteria:
+- **Specific**: "The system shall display loading animation" vs "The system shall be fast"
+- **Measurable**: "Within 2 seconds" vs "Quickly"
+- **Achievable**: Technically feasible within constraints
+- **Relevant**: Directly tied to business value
+- **Time-bound**: Specifies when applicable (e.g., "during peak hours")
+
+### Example: Checkout Feature
+**User Story**:  
+"As a guest, I want to complete my booking payment securely so I can confirm my reservation."
+
+**Acceptance Criteria**:
+1. **Payment Flow**:
+   - [ ] When valid credit card details are entered, display success confirmation within 3 seconds
+   - [ ] When payment fails, show specific error (insufficient funds/expired card) with retry option
+
+2. **Validation**:
+   - [ ] Reject submissions with empty required fields (card number, CVV, expiry date)
+   - [ ] Auto-format card numbers as 4-4-4-4 digits during input
+
+3. **Security**:
+   - [ ] Never store raw credit card numbers in application logs
+   - [ ] Mask all but last 4 digits in confirmation emails
+
+4. **Edge Cases**:
+   - [ ] Handle concurrent booking attempts for same property dates
+   - [ ] Maintain booking hold for 15 minutes during payment processing
+
+5. **Confirmation**:
+   - [ ] Send PDF itinerary to guest email within 5 minutes
+   - [ ] Update property calendar in real-time after successful payment
