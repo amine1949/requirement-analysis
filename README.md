@@ -125,3 +125,49 @@ Requirement Analysis consists of five systematic activities that transform vague
   - Traceability matrix (mapping requirements to sources)
   - Feasibility analysis (technical/budget assessment)
 - **Success Metric**: Signed-off requirement baseline
+
+## Types of Requirements
+
+### Functional Requirements (What the system does)
+*Definition*: Specific behaviors or functions the system must perform
+
+**Booking System Examples**:
+1. **User Authentication**  
+   - "The system shall allow users to register using email and password"  
+   - "The system shall implement password recovery via email"
+
+2. **Property Search**  
+   - "The system shall filter properties by location, price range, and availability dates"  
+   - "The system shall display search results with pagination (10 listings per page)"
+
+3. **Booking Management**  
+   - "The system shall allow guests to reserve properties for specific date ranges"  
+   - "The system shall send booking confirmation emails within 2 minutes of reservation"
+
+4. **Payment Processing**  
+   - "The system shall integrate with PayPal and Stripe for payments"  
+   - "The system shall generate invoices for completed bookings"
+
+### Non-Functional Requirements (How the system performs)
+*Definition*: Quality attributes and constraints that affect system operation
+
+**Booking System Examples**:
+1. **Performance**  
+   - "Search results shall load within 1.5 seconds for 95% of queries"  
+   - "The system shall handle 1000 concurrent users during peak hours"
+
+2. **Security**  
+   - "All payment transactions shall use TLS 1.2+ encryption"  
+   - "User passwords shall be stored using bcrypt hashing"
+
+3. **Reliability**  
+   - "The booking system shall maintain 99.9% uptime"  
+   - "No more than 0.1% of transactions may fail due to system errors"
+
+4. **Usability**  
+   - "First-time users shall complete bookings within 5 minutes without training"  
+   - "The interface shall comply with WCAG 2.1 AA accessibility standards"
+
+5. **Scalability**  
+   - "The system shall support 20% annual growth in property listings"  
+   - "Database queries shall maintain sub-second response times with 50,000 properties"
